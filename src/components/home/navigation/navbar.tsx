@@ -33,7 +33,7 @@ const Navbar = () => {
 
                     {/* Right Side Buttons (Pure Frontend) */}
                     <div className="flex items-center gap-4">
-                        <Link href="#" className={buttonVariants({ size: "sm", className: "hidden md:flex" })}>
+                        <Link href="/contact" className={buttonVariants({ size: "sm", className: "hidden md:flex" })}>
                             Contact Us
                         </Link>
                     </div>

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const SITE_CONFIG: Metadata = {
     title: {
-        default: "Edge Innov OPC | Business Solutions & Digital Transformation",
+        default: "Edge Innov OPC - Where Innovation Meets Execution",
         template: `%s | Edge Innov OPC`
     },
     description: "Edge Innov OPC is your full-service corporate partner for modern technology and strategic business solutions. We streamline operations to power sustainable enterprise growth.",
