@@ -156,7 +156,7 @@ export default function ContactPage() {
                     </div>
 
                     {/* Right Side: Interactive Contact Form */}
-                    <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 backdrop-blur-md shadow-2xl relative w-full">
+                    <div className="bg-white/[0.05] border border-white/10 rounded-2xl p-8 backdrop-blur-md shadow-2xl relative w-full">
                         {status === "success" ? (
                             <div className="flex flex-col items-center justify-center text-center h-full py-12 space-y-4">
                                 <div className="w-16 h-16 bg-blue-950/50 border border-blue-500/30 text-blue-400 rounded-full flex items-center justify-center animate-bounce">
@@ -213,7 +213,6 @@ export default function ContactPage() {
                                     />
                                 </div>
 
-                                {/* ADDED: Contact Number Field */}
                                 <div className="space-y-2">
                                     <label className="text-xs font-medium text-gray-400 uppercase tracking-wider">Contact Number</label>
                                     <Input 
@@ -265,7 +264,6 @@ export default function ContactPage() {
 
                                 <Button
                                     type="submit"
-                                    variant="white"
                                     disabled={status === "submitting"}
                                     className="w-full flex items-center justify-center space-x-2"
                                 >
