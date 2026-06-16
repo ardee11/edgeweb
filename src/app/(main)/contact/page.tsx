@@ -156,7 +156,7 @@ export default function ContactPage() {
                     </div>
 
                     {/* Right Side: Interactive Contact Form */}
-                    <div className="bg-white/[0.05] border border-white/10 rounded-2xl p-8 backdrop-blur-md shadow-2xl relative w-full">
+                    <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-8 backdrop-blur-md shadow-2xl relative w-full">
                         {status === "success" ? (
                             <div className="flex flex-col items-center justify-center text-center h-full py-12 space-y-4">
                                 <div className="w-16 h-16 bg-blue-950/50 border border-blue-500/30 text-blue-400 rounded-full flex items-center justify-center animate-bounce">
@@ -174,15 +174,15 @@ export default function ContactPage() {
                                 </button>
                             </div>
                         ) : (
-                            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+                            <form ref={formRef} onSubmit={handleSubmit} className="space-y-3">
                                 
                                 {/* Hidden form parameters used to safely route variables to EmailJS */}
                                 <input type="hidden" name="to_email" value="" />
                                 <input type="hidden" name="company_name" value="" />
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                    <div className="space-y-2">
-                                        <label className="text-xs font-medium text-gray-400 uppercase tracking-wider">Full Name</label>
+                                    <div className="space-y-1">
+                                        <label className="text-xs font-medium text-gray-300 uppercase tracking-wider">Full Name</label>
                                         <Input 
                                             name="name"
                                             type="text" 
@@ -191,8 +191,8 @@ export default function ContactPage() {
                                             placeholder="John Doe"
                                         />
                                     </div>
-                                    <div className="space-y-2">
-                                        <label className="text-xs font-medium text-gray-400 uppercase tracking-wider">Company Name</label>
+                                    <div className="space-y-1">
+                                        <label className="text-xs font-medium text-gray-300 uppercase tracking-wider">Company Name</label>
                                         <Input 
                                             name="company"
                                             type="text" 
@@ -202,8 +202,8 @@ export default function ContactPage() {
                                     </div>
                                 </div>
 
-                                <div className="space-y-2">
-                                    <label className="text-xs font-medium text-gray-400 uppercase tracking-wider">Email Address</label>
+                                <div className="space-y-1">
+                                    <label className="text-xs font-medium text-gray-300 uppercase tracking-wider">Email Address</label>
                                     <Input 
                                         name="email"
                                         type="email" 
@@ -213,19 +213,19 @@ export default function ContactPage() {
                                     />
                                 </div>
 
-                                <div className="space-y-2">
-                                    <label className="text-xs font-medium text-gray-400 uppercase tracking-wider">Contact Number</label>
+                                <div className="space-y-1">
+                                    <label className="text-xs font-medium text-gray-300 uppercase tracking-wider">Contact Number</label>
                                     <Input 
                                         name="phone"
                                         type="tel" 
                                         required
                                         className="bg-white/5 border-white/10 text-white placeholder:text-gray-600 focus-visible:ring-blue-500"
-                                        placeholder="+63 917 123 4567"
+                                        placeholder="0912 345 6789"
                                     />
                                 </div>
 
-                                <div className="space-y-2">
-                                    <label className="text-xs font-medium text-gray-400 uppercase tracking-wider">Inquiry Type</label>
+                                <div className="space-y-1">
+                                    <label className="text-xs font-medium text-gray-300 uppercase tracking-wider">Inquiry Type</label>
                                     <div className="relative">
                                         <select 
                                             name="inquiry_type"
@@ -244,8 +244,8 @@ export default function ContactPage() {
                                     </div>
                                 </div>
 
-                                <div className="space-y-2">
-                                    <label className="text-xs font-medium text-gray-400 uppercase tracking-wider">How can we help?</label>
+                                <div className="space-y-1">
+                                    <label className="text-xs font-medium text-gray-300 uppercase tracking-wider">How can we help?</label>
                                     <textarea 
                                         name="message"
                                         rows={4}
