@@ -85,7 +85,7 @@ const HomePage = () => {
             </Wrapper>
 
             {/* how it works */}
-            <Wrapper id="process" className="flex flex-col items-center justify-center relative md:pt-10 md:pb-16 px-4 md:px-0 mx-auto max-w-7xl">
+            <Wrapper className="flex flex-col items-center justify-center relative md:pt-10 md:pb-16 px-4 md:px-0 mx-auto max-w-7xl">
                 <Container>
                     <div className="max-w-md mx-auto text-start md:text-center">
                         <SectionBadge title="Core Values" />
