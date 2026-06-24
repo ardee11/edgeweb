@@ -15,24 +15,28 @@ export const SITE_CONFIG: Metadata = {
         ]
     },
     openGraph: {
-        title: "Astra - AI Powered Website Builder",
-        description: "Astra is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
+        title: "Edge Innov OPC - Where Innovation Meets Execution",
+        description: "Edge Innov OPC is your full-service corporate partner for modern technology and strategic business solutions. We streamline operations to power sustainable enterprise growth.",
+        type: "website",
         images: [
             {
-                url: "/assets/og-image.png",
+                url: "/assets/og-image.jpg", // Ensure this file exists in your public folder or update the path
+                width: 1200,
+                height: 630,
+                alt: "Edge Innov OPC Enterprise Solutions"
             }
         ]
     },
     twitter: {
         card: "summary_large_image",
-        creator: "@shreyassihasane",
-        title: "Astra - AI Powered Website Builder",
-        description: "Astra is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
+        title: "Edge Innov OPC - Where Innovation Meets Execution",
+        description: "Edge Innov OPC is your full-service corporate partner for modern technology and strategic business solutions. We streamline operations to power sustainable enterprise growth.",
+        creator: "@EdgeInnovOPC", // Change this to your actual company Twitter handle if you have one
         images: [
             {
-                url: "/assets/og-image.png",
+                url: "/assets/og-image.jpg",
             }
         ]
     },
-    metadataBase: new URL("https://astra-app.vercel.app"),
+    metadataBase: new URL("https://edgeinnovph.com"), 
 };
